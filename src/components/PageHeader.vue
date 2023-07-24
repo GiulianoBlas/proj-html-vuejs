@@ -1,5 +1,9 @@
 <script>
 
+import headerTop from "./HeaderTop.vue";
+
+import headerBottom from "./HeaderBottom.vue";
+
 export default {
 
 computed:{
@@ -7,6 +11,10 @@ computed:{
 },
 
 components:{
+
+    headerTop,
+
+    headerBottom
    
 },
 
@@ -28,24 +36,27 @@ data(){
 
 <template>
 
-  <!-- 
-    HEADER 
+    <header>
 
-    TOP
-    - logo
-    - nav
-    - search input
-    - cart
+        <div class="header-bg">
 
-    BOTTOM 
-    - jumbotron background
-    - links to socials
-    - read more button
+        <!-- TOP -->
+            <headerTop/>
 
-  -->
+        <!-- BOTTOM  -->
+            <headerBottom/>
+
+        </div>
+
+    </header>
 
 </template>
 
-<style >
+<style lang="scss" scoped>
+
+.header-bg{
+    background-image: url('../assets/img/banner1.png') ;
+    background-size: cover;
+}
 
 </style>
