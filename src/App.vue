@@ -1,87 +1,55 @@
 <script>
 
+import pageHeader from "./components/PageHeader.vue";
+
+import pageMain from "./components/PageMain.vue";
+
+import pageFooter from "./components/PageFooter.vue";
+
+
+export default {
+
+computed:{
+
+},
+
+components:{
+
+  pageHeader,
+
+  pageMain,
+
+  pageFooter,
+
+},
+
+data(){
+
+    return {
+        
+    }
+
+},
+
+ methods:{
+
+ },
+
+}
+
 </script>
 
 <template>
 
-  <!-- 
-    HEADER 
+<!-- HEADER  -->
+  <pageHeader/>
 
-    TOP
-    - logo
-    - nav
-    - search input
-    - cart
+<!-- MAIN  -->
+  <pageMain/> 
 
-    BOTTOM 
-    - jumbotron background
-    - links to socials
-    - read more button
-
-  -->
-
-
-  <!-- 
-    MAIN 
-
-    BADGE SECTIONS 
-    - badje for each player type
+<!-- FOOTER  -->
+  <pageFooter/> 
     
-    BEST GAMING COMPANY SECTION
-    - paragraph
-    - img
-    - discover more button
-
-    BEST GAMING ARENA SECTION
-    - streaming
-    - news 
-    - awards
-    - tournament
-    
-    LIVE STREAMING
-    - live streaming carousel
-
-    UPCOMING MATCH SECTION
-    - battle options buttons
-    - battle options slots
-
-    CHOOSE BEST SECTION
-    - best character carousel
-
-    MANAGE BATTLE SECTION
-    - gaming style carousel
-
-    EXPERT TEAM SECTION
-    - experts slots carousel 
-
-    CLIENTS SECTION
-    - clients feedback slot 
-
-    SHOP SECTION
-    - shop products carousel
-
-    NEW ARTICLES SECTION
-    - new articles carousel 
-
-    NEWS LETTER SECTION
-    - form to subsricbe to new letter 
-
-  -->
-
-
-  <!-- 
-    FOOTER 
-    
-    TOP
-    - logo
-    - nav
-
-    BOTTOM 
-    - copyright 
-    - links to socials 
-
-  -->
-
 </template>
 
 <style >
