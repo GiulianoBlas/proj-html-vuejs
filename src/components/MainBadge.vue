@@ -69,6 +69,14 @@ data(){
 
     @include container-center;
 
+    position: absolute;
+
+    top:0%;
+
+    left: 50%;
+
+    transform: translate(- 50% , - 50%);
+
     ul{
 
         @include d-flex-between;

@@ -122,7 +122,7 @@ data(){
 
     margin-top: 12.5rem;
 
-    padding-bottom: 100px;
+    padding-bottom:18.75rem;
 
     position: relative;
 

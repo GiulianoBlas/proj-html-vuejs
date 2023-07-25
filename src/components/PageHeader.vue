@@ -77,6 +77,8 @@ data(){
 
     background-size: cover;
 
+    position: relative;
+
 }
 
 </style>
