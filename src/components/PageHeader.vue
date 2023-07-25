@@ -4,6 +4,8 @@ import headerTop from "./HeaderTop.vue";
 
 import headerBottom from "./HeaderBottom.vue";
 
+import { store } from "../store.js"
+
 export default {
 
 computed:{
@@ -22,70 +24,8 @@ data(){
 
     return {
 
-        headerContent : {
+      store,
 
-            pageLogo : "../../src/assets/img/menulogo.png",
-
-            navOptions : [
-
-            {   name : "home",
-                type: "button",
-                icon : "../../src/assets/img/image.svg",
-                options :['option 1','option 2','option 3','option 4',]},
-
-            {   name : "pages",
-                type: "button",
-                icon : "../../src/assets/img/image.svg",
-                options :['option 1','option 2','option 3','option 4',]}, 
-                
-            {   name : "tournament",
-                type: "link",},     
-
-            {   name : "shop",
-                type: "button",
-                icon : "../../src/assets/img/image.svg",
-                options :['option 1','option 2','option 3','option 4',]}, 
-                   
-            {   name : "blog",
-                type: "button",
-                icon : "../../src/assets/img/image.svg",
-                options :['option 1','option 2','option 3','option 4',]},   
-                
-            {   name : "contact",
-                type: "link",},
-
-            ],
-
-            searchIcon : "../../src/assets/img/image (1).svg",
-
-            shopIcon : "../../src/assets/img/image (3).svg",
-
-            removeIcon : "../src/assets/img/image (2).svg",
-
-            socialsIcons : [
-
-                '../../src/assets/img/image (4).svg',
-
-                '../../src/assets/img/image (5).svg',
-
-                '../../src/assets/img/image (6).svg',
-
-                '../../src/assets/img/image (7).svg',
-
-            ],
-
-            greetings : "welcome to raxg",
-
-            slogan : "are you ready for your next challenge ?",
-
-            arrowIcon: "../../src/assets/img/image (8).svg",
-
-            playIcon: "../../src/assets/img/image (9).svg",
-
-            readMore : "   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus quam, distinctio vero, repellendus iure aspernatur aperiam sunt eligendi numquam modi possimus molestias libero? Veniam consequatur quisquam voluptas recusandae accusamus, eius amet, aut voluptate enim delectus iure velit repellat repellendus quos laboriosam omnis iste? Odit dolorem nobis saepe excepturi magni, dignissimos iure qui recusandae laudantium doloribus repudiandae sequi, unde sunt consectetur quibusdam iste esse nisi ex eveniet voluptates voluptatum. Quibusdam dolorum sit laborum dolorem delectus sequi illum! Laudantium earum perferendis nisi dicta consequuntur? Expedita ea vero placeat, ab explicabo animi excepturi, tempora tenetur ducimus dolorum ratione cupiditate blanditiis quis aut dolores?"
-
-        }
-        
     }
 
 },
@@ -106,21 +46,21 @@ data(){
 
         <!-- TOP -->
             <headerTop
-            :pageLogo="headerContent.pageLogo"
-            :navOptions="headerContent.navOptions"
-            :searchIcon="headerContent.searchIcon"
-            :shopIcon="headerContent.shopIcon"
-            :removeIcon="headerContent.removeIcon"
+            :pageLogo="store.content.pageLogo"
+            :navOptions="store.content.navOptions"
+            :searchIcon="store.content.searchIcon"
+            :shopIcon="store.content.shopIcon"
+            :removeIcon="store.content.removeIcon"
             />
 
         <!-- BOTTOM  -->
             <headerBottom
-            :socialIcons="headerContent.socialsIcons"
-            :greetings="headerContent.greetings"
-            :slogan="headerContent.slogan"
-            :readMore="headerContent.readMore"
-            :arrowIcon="headerContent.arrowIcon"
-            :playIcon="headerContent.playIcon"
+            :socialIcons="store.content.socialsIcons"
+            :greetings="store.content.greetings"
+            :slogan="store.content.slogan"
+            :readMore="store.content.readMore"
+            :arrowIcon="store.content.arrowIcon"
+            :playIcon="store.content.playIcon"
             />
 
         </div>
