@@ -1,5 +1,9 @@
 <script>
 
+import footerTop  from "./FooterTop.vue";
+
+import footerBottom  from "./FooterBottom.vue";
+
 export default {
 
 computed:{
@@ -7,6 +11,10 @@ computed:{
 },
 
 components:{
+
+  footerTop,
+
+  footerBottom,
    
 },
 
@@ -28,18 +36,16 @@ data(){
 
 <template>
 
-  <!-- 
-    FOOTER 
-    
-    TOP
-    - logo
-    - nav
+    <footer>
 
-    BOTTOM 
-    - copyright 
-    - links to socials 
-
-  -->
+      <!-- TOP -->
+      <footerTop/>
+      
+      
+      <!-- BOTTOM -->
+      <footerBottom/>
+      
+    </footer>
 
 </template>
 
