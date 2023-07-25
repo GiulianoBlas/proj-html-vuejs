@@ -1,5 +1,31 @@
 <script>
 
+import badgeSection from "./MainBadge.vue"
+
+import gamingComSection from "./MainGamingCompany.vue"
+
+import gamingArenaSection from "./MainGamingArena.vue"
+
+import liveSection from "./MainLive.vue"
+
+import matchSection from "./MainMatch.vue"
+
+import chooseBestSection from "./MainChooseBest.vue"
+
+import battleSection from "./MainBattle.vue"
+
+import expertsSection from "./MainExperts.vue"
+
+import clientSection from "./MainClients.vue"
+
+import shopSection from "./MainShop.vue"
+
+import articlesSection from "./MainArticles.vue"
+
+import newsLetterSection from "./MainNewsLetter.vue"
+
+import { store } from "../store.js"
+
 export default {
 
 computed:{
@@ -7,12 +33,38 @@ computed:{
 },
 
 components:{
-   
+
+  badgeSection,
+
+  gamingComSection,
+
+  gamingArenaSection,
+
+  liveSection,
+
+  matchSection,
+
+  chooseBestSection,
+
+  battleSection,
+
+  expertsSection,
+
+  clientSection,
+
+  shopSection,
+
+  articlesSection,
+
+  newsLetterSection,
+
 },
 
 data(){
 
     return {
+
+      store,
         
     }
 
@@ -28,52 +80,36 @@ data(){
 
 <template>
 
-  <!-- 
-    MAIN 
+  <!-- MAIN  -->
+  <main>
 
-    BADGE SECTIONS 
-    - badje for each player type
-    
-    BEST GAMING COMPANY SECTION
-    - paragraph
-    - img
-    - discover more button
+    <badgeSection
+    :teams="store.content.teams"
+    />
 
-    BEST GAMING ARENA SECTION
-    - streaming
-    - news 
-    - awards
-    - tournament
-    
-    LIVE STREAMING
-    - live streaming carousel
+    <gamingComSection/>
 
-    UPCOMING MATCH SECTION
-    - battle options buttons
-    - battle options slots
+    <gamingArenaSection/>
 
-    CHOOSE BEST SECTION
-    - best character carousel
+    <liveSection/>
 
-    MANAGE BATTLE SECTION
-    - gaming style carousel
+    <matchSection/>
 
-    EXPERT TEAM SECTION
-    - experts slots carousel 
+    <chooseBestSection/>
 
-    CLIENTS SECTION
-    - clients feedback slot 
+    <battleSection/>
 
-    SHOP SECTION
-    - shop products carousel
+    <expertsSection/>
 
-    NEW ARTICLES SECTION
-    - new articles carousel 
+    <clientSection/>
 
-    NEWS LETTER SECTION
-    - form to subsricbe to new letter 
+    <shopSection/>
 
-  -->
+    <articlesSection/>
+
+    <newsLetterSection/>
+
+  </main>
 
 </template>
 
