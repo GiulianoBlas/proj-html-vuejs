@@ -60,7 +60,7 @@ data(){
 
                 <ul>
 
-                    <li v-for=" option in navOptions">
+                    <li v-for=" (option,index) in navOptions" :key="index">
                         
                         <button v-if="option.type == 'button' ">{{ option.name }} <img :src="option.icon" alt=""></button>
 
@@ -68,7 +68,7 @@ data(){
 
                         <ul v-if="option.type == 'button'" >
 
-                            <li v-for="selectOption in option.options">
+                            <li v-for="(selectOption,index) in option.options" :key="index">
 
                                 <a href="">{{ selectOption }}</a>
 
@@ -227,6 +227,7 @@ data(){
                             }
                         }
 
+                        
                        ul{
 
                         display: none;
@@ -268,6 +269,7 @@ data(){
                         }
 
                     }
+
                 }
 
             }
@@ -416,6 +418,7 @@ data(){
                                     width: 100%;
 
                                 }
+
                             }
 
                             .item-info{
@@ -486,7 +489,9 @@ data(){
                             background-color: #00AC4D;
 
                             cursor: pointer;
+
                         }
+
                     }
 
                 }
@@ -500,6 +505,7 @@ data(){
             }
 
         }
+        
     }
 
 </style>
