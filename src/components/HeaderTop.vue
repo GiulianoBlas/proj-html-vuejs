@@ -180,6 +180,7 @@ data(){
 
 @use '../assets/scss/HeaderTop.scss' as * ;
     .container-center{
+
         @include container-center;
 
         @include d-flex-between;
@@ -271,7 +272,6 @@ data(){
 
             }
 
-            
         }
 
         #search-cart-container{
@@ -280,13 +280,13 @@ data(){
 
             justify-content: flex-end;
 
-             width: 6.25rem;
+            width: 6.25rem;
 
             #search-input-container{
 
                 @include d-flex-between;
 
-                margin: .625rem;
+                margin: .3125rem;
 
                 flex-direction: row-reverse;
 
@@ -301,6 +301,15 @@ data(){
                     img{
 
                         width: 100%;
+
+                        filter: brightness(0) 
+                                saturate(100%) 
+                                invert(15%) 
+                                sepia(35%) 
+                                saturate(4439%) 
+                                hue-rotate(230deg) 
+                                brightness(98%) 
+                                contrast(90%);
 
                     }
                     
@@ -332,14 +341,14 @@ data(){
                 &:hover #search-input{
 
                     display: block;
-                    
+
                 }
                 
             }
 
             #cart-container{
 
-                margin: .625rem;
+                margin: .3125rem;
 
                #cart-icon{
 
@@ -354,6 +363,15 @@ data(){
                     img{
 
                         width: 100%;
+
+                        filter: brightness(0) 
+                                saturate(100%) 
+                                invert(15%) 
+                                sepia(35%) 
+                                saturate(4439%) 
+                                hue-rotate(230deg) 
+                                brightness(98%) 
+                                contrast(90%);
 
                     }
 
@@ -466,6 +484,8 @@ data(){
                             padding-bottom: .3125rem;
 
                             background-color: #00AC4D;
+
+                            cursor: pointer;
                         }
                     }
 
