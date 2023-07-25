@@ -100,6 +100,35 @@ export const store = reactive({
                 badge : "../../src/assets/img/6.png"
             },
 
+        ],
+
+        proList: [
+
+            {
+                info:"Lorem ipsum dolor sit amet.",
+                icon:"../../src/assets/img/image (10).svg"
+            },
+
+            {
+                info:"Lorem ipsum dolor sit amet.",
+                icon:"../../src/assets/img/image (10).svg"
+            },
+
+            {
+                info:"Lorem ipsum dolor sit amet.",
+                icon:"../../src/assets/img/image (10).svg"
+            },
+
+            {
+                info:"Lorem ipsum dolor sit amet.",
+                icon:"../../src/assets/img/image (10).svg"
+            },
+
+            {
+                info:"Lorem ipsum dolor sit amet.",
+                icon:"../../src/assets/img/image (10).svg"
+            },
+
         ]
 
     }
