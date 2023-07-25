@@ -60,6 +60,8 @@ data(){
 
     @include reset;
 
+    font-family: 'Montserrat', sans-serif;
+
   }
 
 </style>
