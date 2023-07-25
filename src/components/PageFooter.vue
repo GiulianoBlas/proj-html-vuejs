@@ -4,6 +4,8 @@ import footerTop  from "./FooterTop.vue";
 
 import footerBottom  from "./FooterBottom.vue";
 
+import { store } from "../store.js";
+
 export default {
 
 computed:{
@@ -21,6 +23,8 @@ components:{
 data(){
 
     return {
+
+      store,
         
     }
 
@@ -38,17 +42,38 @@ data(){
 
     <footer>
 
+      <div id="footer-bg">
+
       <!-- TOP -->
-      <footerTop/>
-      
-      
+        <footerTop
+        :pageLogo="store.content.pageLogo"
+        :navOptions="store.content.navOptions"
+        />
+        
+        
       <!-- BOTTOM -->
-      <footerBottom/>
-      
+        <footerBottom
+        :copyRight="store.content.copyRight"
+        :designer="store.content.designer"
+        :socialsIcons="store.content.socialsIcons"
+        />
+
+      </div>
+
     </footer>
 
 </template>
 
 <style >
+
+#footer-bg{
+
+  background-image: url('../assets/img/banner1.png') ;
+
+  background-size: cover;
+
+}
+
+
 
 </style>
