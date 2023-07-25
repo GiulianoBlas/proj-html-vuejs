@@ -8,18 +8,17 @@ computed:{
 
 props :{
 
-socialIcons : Array,
+    socialIcons : Array,
 
-greetings : String,
+    greetings : String,
 
-slogan : String,
+    slogan : String,
 
-readMore : String,
+    readMore : String,
 
-arrowIcon : String,
+    arrowIcon : String,
 
-playIcon : String,
-
+    playIcon : String,
 
 },
 
@@ -278,6 +277,7 @@ data(){
         #read-more-button:hover button{
 
             color:  #05CC7C;
+            
         }
 
         #read-more-button:hover img{
@@ -292,9 +292,6 @@ data(){
                     contrast(96%);
 
         }
-
-
-
 
         #play-button{
 
@@ -346,6 +343,7 @@ data(){
             display: none;
 
         }
+
     }
 
 }
