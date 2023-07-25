@@ -1,0 +1,17 @@
+@mixin container-center{
+    width: 75%;
+    margin: auto;
+}
+
+@mixin d-flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin circle-frame{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .625rem;
+    border-radius: 50%;
+}
