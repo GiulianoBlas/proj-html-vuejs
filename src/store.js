@@ -4,8 +4,6 @@ export const store = reactive({
 
     content : {
 
-        pageLogo : "../../src/assets/img/menulogo.png",
-
         navOptions : [
 
         {   name : "home",
@@ -35,6 +33,8 @@ export const store = reactive({
             type: "link",},
 
         ],
+
+        pageLogo : "../../src/assets/img/menulogo.png",
 
         searchIcon : "../../src/assets/img/image (1).svg",
 
@@ -67,6 +67,40 @@ export const store = reactive({
         copyRight: "RaxG",
 
         designer : "NextGenerationDev",
+
+        teams: [
+
+            {
+                name:"ninja gaming",
+                badge : "../../src/assets/img/1.png"
+            },
+
+            {
+                name:"king gaming",
+                badge : "../../src/assets/img/2.png"
+            },
+
+            {
+                name:"krull gaming",
+                badge : "../../src/assets/img/3.png"
+            },
+
+            {
+                name:"panda gaming",
+                badge : "../../src/assets/img/4.png"
+            },
+
+            {
+                name:"witch gaming",
+                badge : "../../src/assets/img/5.png"
+            },
+
+            {
+                name:"astro gaming",
+                badge : "../../src/assets/img/6.png"
+            },
+
+        ]
 
     }
     
