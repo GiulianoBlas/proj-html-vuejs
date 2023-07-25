@@ -87,7 +87,11 @@ data(){
     :teams="store.content.teams"
     />
 
-    <gamingComSection/>
+    <gamingComSection
+    :proList="store.content.proList"
+    :arrowIcon="store.content.arrowIcon"
+    :playIcon="store.content.playIcon"
+    />
 
     <gamingArenaSection/>
 
@@ -114,5 +118,11 @@ data(){
 </template>
 
 <style >
+
+main{
+
+  position: relative;
+  
+}
 
 </style>
