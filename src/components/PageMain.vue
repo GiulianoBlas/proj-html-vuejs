@@ -97,7 +97,9 @@ data(){
     :arenaSquares="store.content.arenaSquares"
     />
 
-    <liveSection/>
+    <liveSection
+    :liveStream="store.content.liveStream"
+    />
 
     <matchSection/>
 
