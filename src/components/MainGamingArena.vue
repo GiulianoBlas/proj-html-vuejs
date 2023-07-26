@@ -59,19 +59,23 @@ data(){
 
             <div class="square-container" v-for="(square,index) in arenaSquares" :key="index" >
 
-                <div :class="square.type == 'green' ? `square-slot green-square` : `square-slot violet-square`">
+                <a href="">
 
-                    <div>
+                    <div :class="square.type == 'green' ? `square-slot green-square` : `square-slot violet-square`">
 
-                        <img :src="square.icon" alt="">
+                        <div>
+
+                            <img :src="square.icon" alt="">
+
+                        </div>
+
+                        <h3>{{ square.title }}</h3>
+
+                        <p>{{ square.info}}</p>
 
                     </div>
 
-                    <h3>{{ square.title }}</h3>
-
-                    <p>{{ square.info}}</p>
-
-                </div>
+                </a>
 
             </div>
 
@@ -138,6 +142,7 @@ section{
             width: 50%;
 
             span{
+
                 color: #00AC4D;
 
                 text-transform: capitalize;
@@ -147,6 +152,7 @@ section{
                 padding-bottom: .625rem;
 
                 font-weight: 600;
+
             }
 
             h2{
@@ -185,77 +191,87 @@ section{
                 height:50%;
 
                 padding: .625rem;
-                .square-slot{
 
-                    width: 100%;
+                a{
 
-                    height: 100%;
-
-                    border-radius: .625rem;
-
-                    padding:.625rem;
-
-                    display: flex;
-
-                    justify-content: center;
-
-                    flex-wrap: wrap;
+                    text-decoration: none;
                     
-                    div{
+                    .square-slot{
 
-                        width: 3.75rem;
+                        width: 100%;
 
-                        height: 3.75rem;
+                        height: 100%;
 
-                        padding: .625rem;
+                        border-radius: .625rem;
 
-                        background-color: #202046;
+                        padding:.625rem;
 
-                        border-radius: 50%;
+                        display: flex;
 
-                        img{
+                        justify-content: center;
+
+                        flex-wrap: wrap;
+                        
+                        div{
+
+                            width: 3.75rem;
+
+                            height: 3.75rem;
+
+                            padding: .625rem;
+
+                            background-color: #202046;
+
+                            border-radius: 50%;
+
+                            img{
+
+                                width: 100%;
+
+                            }
+
+                        }
+
+                        h3,p{
+
                             width: 100%;
+
+                            text-align: center;
+
+                            text-transform: capitalize;
                         }
 
                     }
 
-                    h3,p{
-                        width: 100%;
+                    .green-square{
 
-                        text-align: center;
+                        background-color: #00AC4D;
 
-                        text-transform: capitalize;
-                    }
+                        h3{
+                            
+                            color: #202046;
 
-                }
+                            font-weight: 600;
 
-                .green-square{
+                        }
 
-                    background-color: #00AC4D;
+                        p{
+                            color: #202046;
 
-                    h3{
-                        
-                        color: #202046;
-
-                        font-weight: 600;
+                            font-weight: 400;
+                        }
 
                     }
 
-                    p{
-                        color: #202046;
+                    .violet-square{
 
-                        font-weight: 400;
-                    }
+                        background-color: #333287 ;
 
-                }
+                        h3,p{
+                            
+                            color:white;
 
-                .violet-square{
-
-                    background-color: #333287 ;
-
-                    h3,p{
-                        
-                        color:white;
+                        }
 
                     }
 
