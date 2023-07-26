@@ -129,6 +129,38 @@ export const store = reactive({
                 icon:"../../src/assets/img/image (10).svg"
             },
 
+        ],
+
+        arenaSquares : [
+
+            {
+                title:"live streaming",
+                icon:"../../src/assets/img/feature1.png",
+                info:"Lorem ipsum dolor sit amet.",
+                type:"green",
+            },
+
+            {
+                title:"gaming news",
+                icon:"../../src/assets/img/feature2.png",
+                info:"Lorem ipsum dolor sit amet.",
+                type:"violet"
+            },
+
+            {
+                title:"great tournament",
+                icon:"../../src/assets/img/feature3.png",
+                info:"Lorem ipsum dolor sit amet.",
+                type:"violet"
+            },
+
+            {
+                title:"awward ceremony",
+                icon:"../../src/assets/img/feature4.png",
+                info:"Lorem ipsum dolor sit amet.",
+                type:"green"
+            },
+
         ]
 
     }
