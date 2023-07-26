@@ -161,6 +161,26 @@ export const store = reactive({
                 type:"green"
             },
 
+        ],
+
+        liveStream : [
+
+            {
+                title:"call of deauty",
+                big:"../../src/assets/img/feature1.png",
+                small:"../../src/assets/img/v-small1.png" ,
+                info:"  Lorem ipsum dolor sit amet.",
+                active:true,
+            },
+
+            {
+                title:"assaain creed",
+                big:"",
+                small:"../../src/assets/img/v-small2.png",
+                info:"Lorem ipsum dolor sit amet.",
+                active:false
+            },
+
         ]
 
     }
