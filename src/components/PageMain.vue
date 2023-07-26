@@ -93,7 +93,9 @@ data(){
     :playIcon="store.content.playIcon"
     />
 
-    <gamingArenaSection/>
+    <gamingArenaSection
+    :arenaSquares="store.content.arenaSquares"
+    />
 
     <liveSection/>
 
