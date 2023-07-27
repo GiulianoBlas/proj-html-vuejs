@@ -16,6 +16,10 @@
     font-size: .875rem;
     text-decoration: none;
     cursor: pointer;
+    display: block;
+    padding: .3125rem;
+    border-radius: .3125rem
+
 }
 
 @mixin circle-frame{
