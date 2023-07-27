@@ -476,7 +476,9 @@ export const store = reactive({
 
         ],
 
-        cart : []
+        cart : [],
+
+        totalPrice : [0]
 
     }
     
