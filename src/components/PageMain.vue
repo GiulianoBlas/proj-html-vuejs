@@ -72,6 +72,7 @@ data(){
 
  methods:{
 
+
  },
 
 }
@@ -103,15 +104,28 @@ data(){
 
     <matchSection/>
 
-    <chooseBestSection/>
+    <chooseBestSection
+    :bestCharacters="store.content.bestCharacters"
+    />
 
     <battleSection/>
 
-    <expertsSection/>
+    <expertsSection
+    :experts="store.content.experts"
+    :socialsIcons="store.content.socialsIcons"
+    />
 
-    <clientSection/>
+    <clientSection
+    :clients="store.content.clients"
+    />
 
-    <shopSection/>
+    <shopSection
+    :products="store.content.products"
+    :shopIcons="store.content.shopIcons"
+    :stars="store.content.stars"
+    :cartIcon="store.content.cartIcon"
+    :cart="store.content.cart"
+    />
 
     <articlesSection/>
 
