@@ -4,6 +4,26 @@ export default {
 
 computed:{
 
+    dinamicCart(){
+
+        let myCart = this.cart
+
+        return myCart
+
+    },
+
+    finalPrice(){
+        
+        this.sum = this.totalPrice.reduce((a , b) => {
+
+            return a + b ;
+
+        })
+
+        return this.sum
+
+    }
+
 },
 
 props :{
@@ -18,21 +38,41 @@ props :{
 
     removeIcon : String,
 
+    cart : Array,
+
+    totalPrice : Array
+
 },
 
 components:{
+
+   
    
 },
 
 data(){
 
     return {
-        
+
+        index : null,
+
+        sum : 0
+ 
     }
 
 },
 
  methods:{
+
+    removeProduct(index){
+
+        this.index = index
+
+        this.cart.splice(index , 1)
+
+        this.totalPrice.splice(index + 1, 1)
+
+    },
 
  },
 
@@ -116,23 +156,23 @@ data(){
 
                     <ul>
 
-                        <li class="cart-item">
+                        <li  v-for="(product,index) in dinamicCart " class="cart-item">
 
                             <div class="item-img">
 
-                                <img src="../assets/img/s1.png" alt="">
+                                <img :src="product.Pic" alt="">
 
                             </div>
 
                             <div class="item-info">
 
-                                <h3>item</h3>
+                                <h3>{{ product.name }}</h3>
 
-                                <div>quality:<span>prezzo</span></div>
+                                <div>quality : <span>{{ product.discountedP }} &euro;</span></div>
 
                             </div>
                             
-                            <div class="remove-item">
+                            <div class="remove-item" @click="removeProduct(index)">
 
                                 <img :src="removeIcon" alt="">
                                 
@@ -152,7 +192,7 @@ data(){
                     
                         <div>
 
-                            prezzo totale
+                           {{ finalPrice }}&euro;
 
                         </div>
                         
@@ -184,6 +224,8 @@ data(){
         @include container-center;
 
         @include d-flex-between;
+
+        flex-wrap: wrap;
 
         padding: .625rem;
 
@@ -393,6 +435,8 @@ data(){
 
                     padding: .625rem;
 
+                    z-index: 3;
+
                     ul{
  
                         .cart-item{
@@ -407,15 +451,21 @@ data(){
 
                                 width:3.125rem;
 
+                                height:3.125rem;
+
                                 margin: .3125rem;
 
                                 border: 1px solid #00AC4D;
 
-                                padding: .1875rem;
+                                padding: .3125rem;
 
                                 img{
 
                                     width: 100%;
+
+                                    height: 100%;
+
+                                    object-fit: contain;
 
                                 }
 
@@ -427,20 +477,24 @@ data(){
 
                                 color: white;
 
+                                width: calc(100% - 5rem);
+
+                                & > *{
+
+                                   text-align: start;
+                                }
+
                             }
 
                             .remove-item{
 
-                                width: 10px;
+                                width: 20px;
 
                                 margin: .3125rem;
 
                                 cursor: pointer;
 
                                 img{
-
-                                    width: 100%;
-
                                     
                                     filter: invert(40%) 
                                             sepia(83%) 
@@ -458,6 +512,7 @@ data(){
                     }
 
                     #total-order{
+
                         color: white;
                         
                         text-align: center;
