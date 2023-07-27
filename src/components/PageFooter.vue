@@ -68,7 +68,7 @@ data(){
 
 #footer-bg{
 
-  background-image: url('../../public/img/banner1.png') ;
+  background-image: url('/img/banner1.png') ;
 
   background-size: cover;
 

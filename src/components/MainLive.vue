@@ -83,13 +83,13 @@ data(){
 
                         <button class="active-button">
 
-                            <img src="../../public/img/image (11).svg" alt="">
+                            <img src="/img/image (11).svg" alt="">
 
                         </button>
 
                         <button>
 
-                            <img src="../../public/img/image (12).svg" alt="">
+                            <img src="/img/image (12).svg" alt="">
 
                         </button>
 
@@ -133,7 +133,7 @@ data(){
 
 section{
 
-    background-image: url(../../public/img/v-bg.png);
+    background-image: url(/img/v-bg.png);
 
     background-size: cover;
 

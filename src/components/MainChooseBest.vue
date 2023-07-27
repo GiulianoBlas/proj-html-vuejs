@@ -72,7 +72,7 @@ data(){
 
         <div id="bg-decoration">
 
-            <img src="../../public/img/protfolio-vector.png" alt="">
+            <img src="/img/protfolio-vector.png" alt="">
 
         </div>
 
@@ -94,13 +94,13 @@ data(){
 
                             <button class="active-button" @click="prev()">
 
-                                <img src="../../public/img/image (11).svg" alt="">
+                                <img src="/img/image (11).svg" alt="">
 
                             </button>
 
                             <button @click="next()">
 
-                                <img src="../../public/img/image (12).svg" alt="">
+                                <img src="/img/image (12).svg" alt="">
 
                             </button>
 
@@ -141,7 +141,7 @@ data(){
 
                                 <button>
 
-                                    <img src="../../public/img/image (9).svg" alt="">
+                                    <img src="/img/image (9).svg" alt="">
 
                                 </button>
 
