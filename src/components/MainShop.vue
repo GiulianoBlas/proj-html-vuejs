@@ -16,7 +16,9 @@ props:{
 
    cartIcon : String,
 
-   cart : Array
+   cart : Array,
+
+   totalPrice : Array,
     
 },
 
@@ -29,6 +31,8 @@ data(){
     return {
 
         dinamicIndex : 0,
+
+        sum : 0
         
     }
 
@@ -72,6 +76,14 @@ data(){
         this.cart.push(product)
 
         console.log(this.cart);
+
+    },
+
+    addPrice(product){
+
+        this.totalPrice.push(Number(product.discountedP))
+
+        console.log(this.totalPrice);
 
     }
 
@@ -150,7 +162,7 @@ data(){
 
                                 <li>
 
-                                    <button href="" @click="addCart(product)">
+                                    <button href="" @click="addCart(product) , addPrice(product)">
 
                                         <img :src="cartIcon" alt="">
 
@@ -223,7 +235,6 @@ section{
         left:0;
 
         right:0;
-
 
     }
 
