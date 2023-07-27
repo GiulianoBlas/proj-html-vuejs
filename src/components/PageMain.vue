@@ -130,7 +130,9 @@ data(){
 
     <articlesSection/>
 
-    <newsLetterSection/>
+    <newsLetterSection
+    :emails="store.content.emails"
+    />
 
   </main>
 
