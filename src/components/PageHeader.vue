@@ -51,6 +51,7 @@ data(){
             :searchIcon="store.content.searchIcon"
             :shopIcon="store.content.shopIcon"
             :removeIcon="store.content.removeIcon"
+            :cart="store.content.cart"
             />
 
         <!-- BOTTOM  -->
