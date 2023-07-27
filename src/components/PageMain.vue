@@ -125,6 +125,7 @@ data(){
     :stars="store.content.stars"
     :cartIcon="store.content.cartIcon"
     :cart="store.content.cart"
+    :totalPrice="store.content.totalPrice"
     />
 
     <articlesSection/>
