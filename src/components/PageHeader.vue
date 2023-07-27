@@ -52,6 +52,7 @@ data(){
             :shopIcon="store.content.shopIcon"
             :removeIcon="store.content.removeIcon"
             :cart="store.content.cart"
+            :totalPrice="store.content.totalPrice"
             />
 
         <!-- BOTTOM  -->
