@@ -478,7 +478,9 @@ export const store = reactive({
 
         cart : [],
 
-        totalPrice : [0]
+        totalPrice : [0],
+
+        emails : []
 
     }
     
