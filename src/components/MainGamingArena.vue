@@ -39,7 +39,7 @@ data(){
 
     <div id="bg-decoration">
 
-        <img src="../assets/img/Vector.png" alt="">
+        <img src="../../public/img/Vector.png" alt="">
 
     </div>
 

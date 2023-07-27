@@ -76,13 +76,13 @@ data(){
 
             <div>
 
-                <img src="../assets/img/test-grouptwo.png" alt="">
+                <img src="../../public/img/test-grouptwo.png" alt="">
                 
             </div>
 
             <div>
 
-                <img src="../assets/img/test-group.png" alt="">
+                <img src="../../public/img/test-group.png" alt="">
 
             </div>
             
@@ -115,13 +115,13 @@ data(){
 
                             <button v-if="[index] == 0" class="prev-button" @click="prev()">
 
-                                <img src="../assets/img/image (11).svg" alt="">
+                                <img src="../../public/img/image (11).svg" alt="">
 
                             </button>
 
                             <button v-if="[index] == 3" class="next-button" @click="next()">
 
-                                <img src="../assets/img/image (12).svg" alt="">
+                                <img src="../../public/img/image (12).svg" alt="">
 
                             </button>
 
@@ -135,7 +135,7 @@ data(){
 
                                 <div>
 
-                                    <img src="../assets/img/image (15).svg" alt="">
+                                    <img src="../../public/img/image (15).svg" alt="">
 
                                 </div>
 

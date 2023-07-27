@@ -1,6 +1,4 @@
 <script>
-import { store } from '../store';
-
 
 export default {
 
@@ -74,7 +72,7 @@ data(){
 
         <div id="bg-decoration">
 
-            <img src="../assets/img/protfolio-vector.png" alt="">
+            <img src="../../public/img/protfolio-vector.png" alt="">
 
         </div>
 
@@ -96,13 +94,13 @@ data(){
 
                             <button class="active-button" @click="prev()">
 
-                                <img src="../assets/img/image (11).svg" alt="">
+                                <img src="../../public/img/image (11).svg" alt="">
 
                             </button>
 
                             <button @click="next()">
 
-                                <img src="../assets/img/image (12).svg" alt="">
+                                <img src="../../public/img/image (12).svg" alt="">
 
                             </button>
 
@@ -143,7 +141,7 @@ data(){
 
                                 <button>
 
-                                    <img src="../assets/img/image (9).svg" alt="">
+                                    <img src="../../public/img/image (9).svg" alt="">
 
                                 </button>
 

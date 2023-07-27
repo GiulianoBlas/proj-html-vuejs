@@ -45,18 +45,20 @@ data(){
 
                 <div id="big-frame">
 
-                    <img  src="../assets/img/v-1.png" alt="">
+                    <img  src="../../public/img/v-1.png" alt="">
 
                     <div id="central-button">
 
                         <button>
 
-                            <img src="../assets/img/image (9).svg" alt="">
+                            <img src="../../public/img/image (9).svg" alt="">
 
                         </button>
 
                         <div>
+
                             <span>call of deauty</span>
+                            
                         </div>
 
                     </div>
@@ -81,13 +83,13 @@ data(){
 
                         <button class="active-button">
 
-                            <img src="../assets/img/image (11).svg" alt="">
+                            <img src="../../public/img/image (11).svg" alt="">
 
                         </button>
 
                         <button>
 
-                            <img src="../assets/img/image (12).svg" alt="">
+                            <img src="../../public/img/image (12).svg" alt="">
 
                         </button>
 
@@ -131,7 +133,7 @@ data(){
 
 section{
 
-    background-image: url(../assets/img/v-bg.png);
+    background-image: url(../../public/img/v-bg.png);
 
     background-size: cover;
 
@@ -190,6 +192,9 @@ section{
                         border-radius: 50%;
 
                         background-color: #00AC4D;
+
+                        cursor: pointer;
+
                         img{
 
                             width: 100%;
@@ -283,7 +288,7 @@ section{
 
                     margin: .625rem;
 
-
+                    cursor: pointer;
 
                     img{
 

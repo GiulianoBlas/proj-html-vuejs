@@ -96,13 +96,13 @@ data(){
 
                         <button class="active-button" @click="prev()">
 
-                            <img src="../assets/img/image (11).svg" alt="">
+                            <img src="../../public/img/image (11).svg" alt="">
 
                         </button>
 
                         <button @click="next()">
 
-                            <img src="../assets/img/image (12).svg" alt="">
+                            <img src="../../public/img/image (12).svg" alt="">
 
                         </button>
 

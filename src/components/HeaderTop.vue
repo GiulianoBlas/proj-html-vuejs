@@ -218,7 +218,6 @@ data(){
 
 @use '../assets/scss/mixins.scss' as * ;
 
-@use '../assets/scss/HeaderTop.scss' as * ;
     .container-center{
 
         @include container-center;

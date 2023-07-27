@@ -50,25 +50,25 @@ data(){
 
                     <div id="shape-1">
 
-                        <img src="../assets/img/shape1.png" alt="">
+                        <img src="../../public/img/shape1.png" alt="">
 
                     </div>
 
                     <div id="shape-ex">
 
-                        <img src="../assets/img/exprience-shape.png" alt="">
+                        <img src="../../public/img/exprience-shape.png" alt="">
 
                     </div>
 
                     <div id="shape-2">
 
-                        <img src="../assets/img/shape2.png" alt="">
+                        <img src="../../public/img/shape2.png" alt="">
 
                     </div>
 
                     <div id="exprince" >
 
-                        <img src="../assets/img/exprince.jpg" alt="">
+                        <img src="../../public/img/exprince.jpg" alt="">
 
                     </div>
 

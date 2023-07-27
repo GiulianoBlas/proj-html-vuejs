@@ -75,7 +75,7 @@ data(){
 
 .header-bg{
 
-    background-image: url('../assets/img/banner1.png') ;
+    background-image: url('../../public/img/banner1.png') ;
 
     background-size: cover;
 

@@ -111,23 +111,23 @@ data(){
 
                     <div id="shop-title">
 
-                        <span>team members</span>
+                        <span>gaming shop</span>
 
-                        <h2>our experts team <br> members</h2>
-
+                        <h2>explore our shop<br> members</h2>
+                        
                     </div>
 
                     <div id="buttons">
 
                         <button class="active-button" @click="prev()">
 
-                            <img src="../assets/img/image (11).svg" alt="">
+                            <img src="../../public/img/image (11).svg" alt="">
 
                         </button>
 
                         <button @click="next()">
 
-                            <img src="../assets/img/image (12).svg" alt="">
+                            <img src="../../public/img/image (12).svg" alt="">
 
                         </button>
 
@@ -212,7 +212,7 @@ data(){
 
 section{
 
-    background-image:url('../assets/img/shop-bg.png');
+    background-image:url('../../public/img/shop-bg.png');
 
     background-size: cover;
 
