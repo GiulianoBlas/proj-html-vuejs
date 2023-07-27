@@ -268,6 +268,25 @@ data(){
                             }
                         }
 
+                        &>button:hover,&>a:hover{
+
+                            color: #00AC4D;
+
+                            img{
+
+                                filter:
+                                    brightness(0)
+                                    saturate(100%)
+                                    invert(53%)
+                                    sepia(72%)
+                                    saturate(4525%)
+                                    hue-rotate(121deg)
+                                    brightness(94%)
+                                    contrast(101%);
+
+                            }
+                        }
+
                         
                        ul{
 
@@ -280,6 +299,8 @@ data(){
                         width: 12.5rem;
 
                         padding: .625rem;
+
+                        z-index: 3;
                         
                         li{
 
@@ -298,6 +319,12 @@ data(){
                                 @include button-list-options
 
                             }
+
+                        }
+
+                       li:hover a{
+
+                        background-color: #333287;
 
                         }
 

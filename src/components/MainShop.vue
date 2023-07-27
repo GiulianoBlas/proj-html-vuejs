@@ -113,7 +113,7 @@ data(){
 
                         <span>gaming shop</span>
 
-                        <h2>explore our shop<br> members</h2>
+                        <h2>explore our shop</h2>
                         
                     </div>
 
@@ -262,6 +262,8 @@ section{
 
                 display: flex;
 
+                justify-content:start;
+
                 #shop-title{
 
                    width: 80%;
@@ -284,6 +286,7 @@ section{
                         padding-top: .625rem;
 
                         padding-bottom: 1.25rem;
+
                     }
 
                 }
@@ -295,7 +298,6 @@ section{
                 display: flex;
 
                 align-items: end;
-
 
                 button{
 
@@ -414,13 +416,15 @@ section{
 
                                         padding: .9375rem ;
 
-                                        background-color: #202046;
+                                        background-color: #333287;
 
                                         width: 3.125rem;
 
                                         height: 3.125rem;
 
                                         border-radius: 50%;
+
+                                        border-style: none;
 
                                         margin-bottom: .625rem;
 
