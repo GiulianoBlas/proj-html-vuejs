@@ -9,6 +9,15 @@
     align-items: center;
 }
 
+@mixin button-list-options{
+    color: #00AC4D;
+    background-color: transparent;
+    border-style: none;
+    font-size: .875rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @mixin circle-frame{
     width: 2.5rem;
     height: 2.5rem;
