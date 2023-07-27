@@ -54,6 +54,18 @@ export const store = reactive({
 
         ],
 
+        shopIcons : [
+
+            '../../src/assets/img/image (16).svg',
+
+            '../../src/assets/img/image (18).svg',
+
+        ],
+
+        cartIcon :  '../../src/assets/img/image (17).svg',
+
+        stars :  '../../src/assets/img/image (19).svg',
+
         greetings : "welcome to raxg",
 
         slogan : "are you ready for your next challenge ?",
@@ -181,7 +193,290 @@ export const store = reactive({
                 active:false
             },
 
-        ]
+        ],
+
+        bestCharacters : [
+
+            [
+
+                {
+                    title:"call of deauty",
+                    cover:"../../src/assets/img/protfolio1.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+                {
+                    title:"assaain creed",
+                    cover:"../../src/assets/img/protfolio2.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false
+                },
+
+                {
+                    title:"tomb raider",
+                    cover:"../../src/assets/img/protfolio3.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false
+                },
+
+                {
+                    title:"mortal kombat x",
+                    cover:"../../src/assets/img/protfolio4.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false
+                },
+
+            ],
+
+            [
+
+                {
+                    title:"mortal kombat x",
+                    cover:"../../src/assets/img/protfolio4.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false
+                },
+
+                {
+                    title:"tomb raider",
+                    cover:"../../src/assets/img/protfolio3.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false
+                },
+
+                {
+                    title:"assaain creed",
+                    cover:"../../src/assets/img/protfolio2.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false
+                    
+                },
+
+                {
+                    title:"call of deauty",
+                    cover:"../../src/assets/img/protfolio1.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+            ],
+
+        ],
+    
+        experts : [
+
+            [
+
+                {
+                    name:"cristiano messi",
+                    profilePic:"../../src/assets/img/team1.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+                {
+                    name:"sergio naymer",
+                    profilePic:"../../src/assets/img/team2.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false,
+                },
+
+                {
+                    name:"antonella roccuzzo",
+                    profilePic:"../../src/assets/img/team3.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false,
+                },
+
+                {
+                    name:"lionel ramos",
+                    profilePic:"../../src/assets/img/team4.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false,
+                },
+
+            ],
+
+            [
+
+                {
+                    name:"lionel ramos",
+                    profilePic:"../../src/assets/img/team4.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false,
+                },
+
+                {
+                    name:"antonella roccuzzo",
+                    profilePic:"../../src/assets/img/team3.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false,
+                },
+
+                {
+                    name:"sergio naymer",
+                    profilePic:"../../src/assets/img/team2.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:false,
+                },
+
+                {
+                    name:"cristiano messi",
+                    profilePic:"../../src/assets/img/team1.png",
+                    info:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+            ],
+
+        ],
+
+        clients : [
+
+            [
+
+                {
+                    name:"client 1",
+                    profilePic:"../../src/assets/img/test1.png",
+                    cit:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+                {
+                    name:"client 2",
+                    profilePic:"../../src/assets/img/test2.png",
+                    cit:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+                {
+                    name:"client 3",
+                    profilePic:"../../src/assets/img/test3.png",
+                    cit:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+                {
+                    name:"client 4",
+                    profilePic:"../../src/assets/img/test4.png",
+                    cit:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+            ],
+
+            [
+
+                {
+                    name:"client 5",
+                    profilePic:"../../src/assets/img/test4.png",
+                    cit:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+                {
+                    name:"client 6",
+                    profilePic:"../../src/assets/img/test3.png",
+                    cit:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+                {
+                    name:"client 7",
+                    profilePic:"../../src/assets/img/test2.png",
+                    cit:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+                {
+                    name:"client 8",
+                    profilePic:"../../src/assets/img/test1.png",
+                    cit:"  Lorem ipsum dolor sit amet.",
+                    active:true,
+                },
+
+            ]
+
+        ],
+
+        products : [
+
+            [
+
+                {
+                    name:"console",
+                    Pic:"../../src/assets/img/s1.png",
+                    quality: 4,
+                    price: "800",
+                    discountedP : "699"
+                },
+
+                {
+                    name:"mause",
+                    Pic:"../../src/assets/img/s2.png",
+                    quality: 3,
+                    price: "100",
+                    discountedP : "55"
+                },
+
+                {
+                    name:"vx headset",
+                    Pic:"../../src/assets/img/s3.png",
+                    quality: 4,
+                    price: "1250",
+                    discountedP : "999"
+                },
+
+                {
+                    name:"headphones",
+                    Pic:"../../src/assets/img/s4.png",
+                    quality: 2,
+                    price: "500",
+                    discountedP : "355"
+                },
+
+            ],
+
+            [
+
+                {
+                    name:"headphones",
+                    Pic:"../../src/assets/img/s4.png",
+                    quality: 2,
+                    price: "500",
+                    discountedP : "355"
+                },
+
+                {
+                    name:"vx headset",
+                    Pic:"../../src/assets/img/s3.png",
+                    quality: 4,
+                    price: "1250",
+                    discountedP : "999"
+                },
+
+                {
+                    name:"mause",
+                    Pic:"../../src/assets/img/s2.png",
+                    quality: 3,
+                    price: "100",
+                    discountedP : "55"
+                },
+
+                {
+                    name:"console",
+                    Pic:"../../src/assets/img/s1.png",
+                    quality: 2,
+                    price: "800",
+                    disconutedP : "699"
+                },
+
+            ]
+
+        ],
+
+        cart : []
 
     }
     
