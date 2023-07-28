@@ -469,7 +469,7 @@ export const store = reactive({
                     Pic:"/img/s1.png",
                     quality: 2,
                     price: "800",
-                    disconutedP : "699"
+                    discountedP : "699"
                 },
 
             ]

@@ -121,13 +121,13 @@ data(){
 
                         <button class="active-button" @click="prev()">
 
-                            <img src="../../public/img/image (11).svg" alt="">
+                            <img src="/img/image (11).svg" alt="">
 
                         </button>
 
                         <button @click="next()">
 
-                            <img src="../../public/img/image (12).svg" alt="">
+                            <img src="/img/image (12).svg" alt="">
 
                         </button>
 
@@ -212,7 +212,7 @@ data(){
 
 section{
 
-    background-image:url('../../public/img/shop-bg.png');
+    background-image:url('/img/shop-bg.png');
 
     background-size: cover;
 
